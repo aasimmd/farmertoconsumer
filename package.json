@@ -1,0 +1,31 @@
+{
+  "name": "f2c",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Farmer to Consumer",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aasimmd/f2c.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aasimmd/f2c/issues"
+  },
+  "homepage": "https://github.com/aasimmd/f2c#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

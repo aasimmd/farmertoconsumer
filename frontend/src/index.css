@@ -1,0 +1,308 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Common */
+html
+{
+    font-size: 62.5%; /* 16px default x 62.5 = 10px = 1rem */
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Montserrat, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root
+{
+    height: 100%;
+}
+
+
+h1
+{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+h2
+{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: #8BC34A;
+}
+a:hover
+{
+    color: greenyellow;
+}
+a.brand
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li
+{
+    margin: 1rem;
+}
+p
+{
+    margin-top: 0.1rem;
+}
+
+button
+{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #8BC34A solid;
+    color: white;
+    background-color: #8BC34A;
+    cursor: pointer;
+    font-family: Montserrat, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+button:hover
+{
+    
+    border: 0.1rem green solid;
+}
+button.block
+{
+    width: 100%;
+}
+
+/* header */
+header a
+{
+    color: #8BC34A;
+}
+.badge
+{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.4rem;
+    margin-left: 0.2rem;
+}
+#cart
+{
+    padding-right: 1rem;
+}
+/* GRID */
+.grid-container
+{
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 1fr 5rem;
+    height: 100%;
+}
+
+header
+{
+    grid-area: header;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #1f1f1f;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.80);
+    z-index:1
+}
+
+main
+{
+    grid-area: main;
+    padding: 1rem;
+    background-color: #121212;
+    color: white;
+}
+
+footer
+{
+    grid-area: footer;
+    background-color: #1f1f1f;
+    color:#8BC34A;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.80);
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.row.center
+{
+    justify-content: center;
+}
+.row.top
+{
+    align-items: flex-start;
+}
+.col-1
+{
+    flex: 1 1 25rem;
+}
+.col-2
+{
+    flex: 2 1 50rem;
+}
+.min-30
+{
+    min-width: 30rem;
+}
+
+/* IMAGES */
+img
+{
+    border-radius: 0.5rem 0.5rem 0 0;
+    max-width: 50rem;
+}
+img.medium
+{
+    max-width: 29rem;
+    width: 100%;
+    width: 300px;
+    height: 337px;
+    object-fit: cover;
+}
+img.large
+{
+    width: 100%;
+}
+img.small
+{
+    max-width: 5rem;
+    width: 100%;
+}
+
+/* CARD */
+.card a
+{
+    color: white;
+}
+.card a:hover
+{
+    color: yellowgreen;
+}
+.card
+{
+    background-color: #212121;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.80);
+}
+.card-body
+{
+    padding: 1rem;
+}
+.card-body>*
+{
+    margin-bottom: 0.5rem;
+}
+
+/* RATING */
+.rating span
+{
+    color: greenyellow;
+}
+
+.rating span:last-child
+{
+    color: white;
+}
+
+/*alerts*/
+.success
+{
+    color: #20a020;
+}
+.stockerr
+{
+    color: red;
+}
+.alert
+{
+    padding : 2rem;
+    border : 0.1rem solid transparent;
+    border-radius: 0.5rem;
+}
+.alert-info
+{
+    color: blue;
+    background-color: #2b2b2b;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.80);
+}
+.alert-error
+{
+    color: red;
+    background-color: #2b2b2b;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.80);
+}
+
+/* Form*/
+.form
+{
+    max-width: 60rem;
+    background-color: #212121;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.80);
+}
+.form > div
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.form label
+{
+    margin: 1rem 0;
+    display: block;
+}
+
+/*dropdown*/
+.dropdown
+{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content
+{
+    position: absolute;
+    display: none;
+    right: 0;
+    min-width: 12rem;
+    padding: 1rem;
+    z-index: 1;
+    background-color: #212121;
+    margin: 0;
+    border-radius: 0.5rem;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
