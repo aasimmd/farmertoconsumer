@@ -1,5 +1,5 @@
 {
-  "name": "f2c",
+  "name": "farmertoconsumer",
   "type": "module",
   "version": "1.0.0",
   "description": "Farmer to Consumer",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aasimmd/f2c/issues"
+    "url": "https://github.com/aasimmd/farmertoconsumer/issues"
   },
-  "homepage": "https://github.com/aasimmd/f2c#readme",
+  "homepage": "https://github.com/aasimmd/farmertoconsumer#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
